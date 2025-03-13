@@ -14,8 +14,10 @@ ApkInfo ApkInfo::fromXml(axml::AXMLParser& parser) {
                         ret.versionCode = parser.getElementAttributeTypedValue(i).data;
                     } else if (aName == "versionName") {
                         ret.versionName = parser.getElementAttributeRawValue(i);
-                    }  else if (aName == "package") {
+                    } else if (aName == "package") {
                         ret.package = parser.getElementAttributeRawValue(i);
+                    } else if (aName == "split") {
+                        ret.split = parser.getElementAttributeRawValue(i);
                     }
                 }
             }

@@ -8,6 +8,7 @@ public:
     int versionCode;
     std::string versionName;
     std::string package;
+    std::string split;
 
     static ApkInfo fromXml(axml::AXMLParser& parser);
 
