@@ -2,7 +2,7 @@
 
 ApkInfo ApkInfo::fromXml(axml::AXMLParser& parser) {
     std::vector<std::string> path;
-    ApkInfo ret;
+    ApkInfo ret{};
     while (parser.next()) {
         if (parser.eventType() == axml::AXMLParser::START_ELEMENT) {
             path.push_back(parser.getElementName());

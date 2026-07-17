@@ -5,7 +5,7 @@
 class ApkInfo {
 
 public:
-    int versionCode;
+    int versionCode = -1;
     std::string versionName;
     std::string package;
     std::string split;
